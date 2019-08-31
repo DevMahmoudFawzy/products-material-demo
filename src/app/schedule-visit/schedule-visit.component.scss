@@ -19,6 +19,7 @@ input {
 
 .dialog-img {
     margin: -24px -24px 15px -40px;
+    position: relative;
 
     img {
         width: 100%;
@@ -49,4 +50,25 @@ input {
     letter-spacing: 0;
     color: #58585B;
     opacity: 1;
+}
+
+.close-icon {
+    position: absolute;
+    right: 14px;
+    top: 14px;
+    background-color: rgba(0,0,0,0.3);
+    cursor: pointer;
+    border-radius: 15px;
+    display: flex;
+    color: white;
+    align-items: center;
+    justify-content: center;
+}
+
+.close-icon:hover {
+    transform: scale(1.1);
+}
+
+.close-icon:active {
+    transform: scale(0.9)
 }

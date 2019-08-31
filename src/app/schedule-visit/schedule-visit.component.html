@@ -1,6 +1,9 @@
 <div class="dialog-container">
     <div class="dialog-img">
         <img src="../../assets/images/{{data.product.cover}}" alt="">
+        <span class="close-icon" (click)="dialogRef.close()">
+            <mat-icon>close</mat-icon>
+        </span>
     </div>
     <div class="info-wrapper">
         <div class="product-informations">
