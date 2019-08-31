@@ -1,0 +1,31 @@
+<div class="dialog-container">
+    <div class="dialog-img">
+        <img src="../../assets/images/{{data.product.cover}}" alt="">
+    </div>
+    <div class="info-wrapper">
+        <div class="product-informations">
+            <div class="info-header">{{data.product.name}}</div>
+            <div class="info-details">{{data.product.details}}</div>
+        </div>
+        <form [formGroup]="productsForm">
+            <mat-form-field [floatLabel]="'auto'">
+                <input matInput type="number" formControlName="mobileNumber" required>
+                <mat-label>
+                    Mobile number
+                </mat-label>
+            </mat-form-field>
+            <mat-form-field [floatLabel]="'auto'">
+                <input matInput [matDatepicker]="picker" formControlName="dateOfVisit" required>
+                <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
+                <mat-datepicker #picker></mat-datepicker>
+                <mat-label>
+                    Date of visit
+                </mat-label>
+            </mat-form-field>
+
+            <div class="dialog-btn">
+                <button mat-raised-button (click)="openSnackBar()">SCHEDULE VISIT</button>
+            </div>
+        </form>
+    </div>
+</div>

@@ -1,0 +1,52 @@
+.mat-raised-button {
+    background-color: #2BB473;
+    color: white;
+    font-size: 14px;
+    width: 100%;
+}
+
+.mat-form-field {
+    width: 100%;
+}
+
+.mat-form-field-label-wrapper {
+    font-size: 16px;
+}
+
+input {
+    font-size: 16px;
+}
+
+.dialog-img {
+    margin: -24px -24px 15px -40px;
+
+    img {
+        width: 100%;
+    }
+}
+
+.dialog-btn {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.info-wrapper {
+    margin: 0 -9px;
+}
+
+.info-header {
+    margin-bottom: 5px;
+    font-size: 16px;
+}
+
+.info-details {
+    text-align: left;
+    font-size: 12px;
+    margin-bottom: 16px;
+    font-weight: 300;
+    letter-spacing: 0;
+    color: #58585B;
+    opacity: 1;
+}

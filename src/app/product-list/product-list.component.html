@@ -1,0 +1,13 @@
+<div class="main-content">
+    <div class="product-list">
+        <div class="product" *ngFor="let product of products" (click)="openDialog(product)">
+            <div class="product-img">
+                <img src="../assets/images/{{ product.image }}" alt="product image">
+            </div>
+            <div class="product-details">
+                <span>{{ product.name }}</span>
+                <p>{{ product.details }}</p>
+            </div>
+        </div>
+    </div>
+</div>
