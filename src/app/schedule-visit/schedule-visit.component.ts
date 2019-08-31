@@ -51,7 +51,7 @@ export class ScheduleVisitComponent implements OnInit {
   openSnackBar() {
     if (this.productsForm.valid) {
       this._snackBar.openFromComponent(SnackBarDialogComponent, {
-        duration: 50 * 1000,
+        duration: 5 * 1000,
       });
 
       this.dialogRef.close();

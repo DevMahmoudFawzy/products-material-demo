@@ -45,8 +45,8 @@ export class ProductListComponent implements OnInit {
 
   openDialog(prod): void {
     const dialogRef = this.dialog.open(ScheduleVisitComponent, {
-      width: '260px',
-      height: '600px',
+      width: '300px',
+      height: '640px',
       data: { product: prod }
     });
 
